@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><mark>Bank Form</mark></h1>
+    <form action="/submit" method="POST">
+        
+        <label for="Full name">Full Name:</label>
+        <input type="text" id="full name" name="full name" placeholder="Enter name"> <br>
+        <br>
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="Male" name="Gender" value="male" placeholder="Enter Gender">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+        <br>
+        <br>
+        <label for="Date of birth">Date of birth:</label>
+        <input type="Date" id="Date" name="Date of birth"> <br>
+        <br>
+        <label for="Phone number">Phone number:</label>
+        <input type="number" id="Phone number" name="phone number" placeholder="Enter phone number"> <br>
+        <br>
+        <label for="City of residence">City of residence:</label>
+        <select name="Conunty" id="County">
+            <option value="City of residence"disabled selected>Select city of Residence</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Nakuru">Nakuru</option>
+        </select>
+         <br>
+        <br>
+        <label for="Interests">Interests:</label>
+        <input type="checkbox" id="Loans" name="Loans">
+        <label for="loans">Loans</label>
+        <input type="checkbox" id="Investments" name="Investments">
+        <label for="loans">Investments</label>
+        <input type="checkbox" id="Saving" name="Saving">
+        <label for="loans">Saving</label>
+        <br>
+        <label for="Comment">Leave a comment:</label>
+        <br>
+        <textarea name="Comment" id="Comment" placeholder="Enter comment"></textarea>
+        <br>
+        <button type="submit" value="1">Submit</button>
+        
+    </form>
+    <br>
+    <div>
+        <a href="Index.html">Home</a>
+    </div>
+   
+</body>
+</html>
