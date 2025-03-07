@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML multimedia, tables and forms</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>HTML Multimedia, Tables and forms</h1>
-    <!--Adding audio files to the document-->
-    <h2>Embedded audio</h2>
-    <audio controls>
-        <source src="jhene_aiko_stranger_audio_mp3_49755.mp3" type="audio/mpeg">
-    Media not supported
-    </audio>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">CSS Tutorial</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Multimedia</a></li>
+                <li><a href="#">Tables</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>HTML Multimedia, Tables, and Forms</h1>
+            <p>Learn how to use multimedia elements, create tables, and design forms in HTML.</p>
+        </header>
     <!-- Adding video to the document-->
     <div>
-        <h3>Embedded Video</h3>
+        <h2>Embedded Video</h2>
     </div>
     <div>
-        <video controls width="500" height="500" poster="deeper into self.jpeg">
+        <video width="500" controls  poster="deeper into self.jpeg">
          <source src="jhene_aiko_stranger_audio_h264_49757.mp4" type="video/mp4">
          Media not supported
         </video>
     </div>
-    <h2>HTML Tables</h2>
+    <h3>HTML Tables</h3>
     <table border="1">
         <tr>
             <th>Name</th>
@@ -51,16 +63,50 @@
         </tr>
     </table>
 <!--creating forms  -->
-    <h2>HTML forms</h2>
+<hr color="black">
+<div id="bottom-page">
+    <h4>HTML forms</h4>
+    <div id="form">
     <form action="/sumbit" method="POST">
-     <label for="name">Name</label>
-     <input type="text" id="name" name="name"><br>
-     <label for="email">Email</label>
-     <input type="email" id="email" name="email"> <br>
-     <label for="password">password</label> 
-     <input type="password" id="password" name="password"> <br>
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name" placeholder="Enter your name">
+     <br>
+     <label for="Gender">Gender:</label>
+     <input type="radio" id="male" name="Gender" value="male">
+     <label for="male">Male</label>
+     <input type="radio" id="Female" name="Gender" value="female">
+     <label for="Female">Female</label> <br>
+     <label for="Interests">Interests:</label>
+     <input type="checkbox" id="sports" name="Interests" value="sports">
+     <label for="sports">Sports</label>
+     <input type="checkbox" id="music" name="Interests" value="music">
+     <label for="music">Music</label>
+     <input type="checkbox" id="Readind" name="Interests" value="Reading">
+     <label for="Reading">Reading</label>
+     <br>
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" placeholder="Enter your email"> 
+     <br>
+     <label for="password">Password:</label> 
+     <input type="password" id="password" name="password" placeholder="Password"> 
+     <br>
+     <label for="Message">Message:</label>
+     <br>
+     <textarea name="Message" id="Message" placeholder="Enter message"></textarea>
+     <br>
+     <label for="Countries">Country</label>
+     <select name="Country" id="Country">
+        <option value=" " disabled selected>Select your country</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Burundi">Burundi</option>
+     </select>
+     <br>
      <button type="submit" value="submit">submit</button>
 
     </form>
+    </div>
+</div>
 </body>
 </html>
